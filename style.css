@@ -41,6 +41,10 @@ html, body{
     margin-left: 30px;
 }
 
+.nav-icons .menu{
+    display: none;
+}
+
 .offers{
     background-color: #000;
     color: #fff;
@@ -93,7 +97,7 @@ a{
     /* justify-content: center; */
 }
 .products img{
-    height: 100px;
+    width: 120px;
     margin-bottom: 10px;
 }
 
@@ -158,7 +162,11 @@ a{
     margin: 50px 0 50px 0;
 }
 
-.event-images img{
+.event{
+    height: 400px;
+}
+
+.event1{
     height: 400px;
 }
 
@@ -207,4 +215,117 @@ a{
 
 footer{
     text-align: center;
+}
+
+.close{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    /* .navbar ul{
+        display: none;
+    } */
+
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        
+    }
+
+    .navbar .menu{
+        display: block;
+        position: absolute;
+        top: 35%;
+        right: 6%;
+        width: 25px;
+    }
+
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 40px;
+        position: absolute;
+        background: #fff;
+        opacity: 0%;
+        transform: translateY(-30px);
+        padding-left: 40px;
+        font-weight: 400;
+        visibility: hidden;
+        z-index: 1;
+    }
+
+    .navbar ul li{
+        padding-top: 30px;
+    }
+
+    .nav-icons .close{
+        display: block;
+        opacity: 0%;
+        position: absolute;
+        top: 35%;
+        right: 6%;
+        width: 25px;
+        z-index: -1;
+    }
+
+    .offers{
+        margin-top: 0px;
+        padding: 10px 10px 5px 10px;
+        font-size: 12px;
+    }
+
+    .section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card{
+        margin-top: 30px;
+    }
+
+    .apple-events{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-images{
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .event1{
+        height: 200px;
+    }
+
+    .case{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .case img{
+        object-fit: cover;
+    }
 }
